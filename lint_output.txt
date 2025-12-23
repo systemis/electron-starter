@@ -1,0 +1,99 @@
+
+> lint
+> cross-env NODE_ENV=development eslint . --ext .js,.jsx,.ts,.tsx
+
+
+/Users/thinh/Desktop/work/agent-app/agent-management-typescript/.erb/configs/webpack.config.renderer.prod.ts
+  60:15  error  Replace `MiniCssExtractPlugin.loader,·'css-loader',·'postcss-loader',·'sass-loader'` with `⏎··········MiniCssExtractPlugin.loader,⏎··········'css-loader',⏎··········'postcss-loader',⏎··········'sass-loader',⏎········`  prettier/prettier
+
+/Users/thinh/Desktop/work/agent-app/agent-management-typescript/src/renderer/App.tsx
+   9:7   error  Delete `·`                                                                                                                                                                                                                                                                                                                      prettier/prettier
+  10:1   error  Replace `············<h1·className="text-3xl·font-bold·tracking-tight·text-white">Good·Morning,·Creator` with `········<h1·className="text-3xl·font-bold·tracking-tight·text-white">⏎··········Good·Morning,·Creator⏎········`                                                                                                  prettier/prettier
+  11:1   error  Replace `············` with `········`                                                                                                                                                                                                                                                                                          prettier/prettier
+  12:7   error  Delete `·`                                                                                                                                                                                                                                                                                                                      prettier/prettier
+  13:1   error  Delete `·······`                                                                                                                                                                                                                                                                                                                prettier/prettier
+  14:1   error  Delete `·`                                                                                                                                                                                                                                                                                                                      prettier/prettier
+  15:1   error  Replace `············` with `········`                                                                                                                                                                                                                                                                                          prettier/prettier
+  16:11  error  Replace `······<span·className="text-sm·font-medium·text-zinc-500·uppercase·tracking-wider">Productivity` with `<span·className="text-sm·font-medium·text-zinc-500·uppercase·tracking-wider">⏎············Productivity⏎··········`                                                                                              prettier/prettier
+  17:1   error  Delete `······`                                                                                                                                                                                                                                                                                                                 prettier/prettier
+  18:1   error  Replace `············` with `········`                                                                                                                                                                                                                                                                                          prettier/prettier
+  19:1   error  Delete `····`                                                                                                                                                                                                                                                                                                                   prettier/prettier
+  20:11  error  Replace `·······<span·className="text-sm·font-medium·text-zinc-500·uppercase·tracking-wider">Tasks` with `<span·className="text-sm·font-medium·text-zinc-500·uppercase·tracking-wider">⏎············Tasks⏎··········`                                                                                                           prettier/prettier
+  21:1   error  Replace `·················` with `··········`                                                                                                                                                                                                                                                                                   prettier/prettier
+  22:9   error  Delete `····`                                                                                                                                                                                                                                                                                                                   prettier/prettier
+  23:1   error  Delete `····`                                                                                                                                                                                                                                                                                                                   prettier/prettier
+  24:1   error  Replace `·················<span·className="text-sm·font-medium·text-zinc-500·uppercase·tracking-wider">Focus·Time` with `··········<span·className="text-sm·font-medium·text-zinc-500·uppercase·tracking-wider">⏎············Focus·Time⏎··········`                                                                             prettier/prettier
+  25:1   error  Delete `·······`                                                                                                                                                                                                                                                                                                                prettier/prettier
+  26:1   error  Replace `············` with `········`                                                                                                                                                                                                                                                                                          prettier/prettier
+  27:1   error  Delete `·`                                                                                                                                                                                                                                                                                                                      prettier/prettier
+  29:1   error  Delete `·`                                                                                                                                                                                                                                                                                                                      prettier/prettier
+  30:1   error  Replace `············` with `········`                                                                                                                                                                                                                                                                                          prettier/prettier
+  31:9   error  Delete `····`                                                                                                                                                                                                                                                                                                                   prettier/prettier
+  32:1   error  Replace `················` with `··········`                                                                                                                                                                                                                                                                                    prettier/prettier
+  33:1   error  Replace `····················<span·className="text-xs·font-semibold·px-2.5·py-1·rounded-full·bg-white/10·text-white·border·border-white/10">Design·Phase</span>` with `············<span·className="text-xs·font-semibold·px-2.5·py-1·rounded-full·bg-white/10·text-white·border·border-white/10">⏎··············Design·Phase`  prettier/prettier
+  34:1   error  Replace `····················<span·className="text-zinc-500·text-sm·font-medium">Current·Focus` with `············</span>⏎············<span·className="text-zinc-500·text-sm·font-medium">⏎··············Current·Focus⏎············`                                                                                            prettier/prettier
+  35:1   error  Replace `················` with `··········`                                                                                                                                                                                                                                                                                    prettier/prettier
+  36:1   error  Replace `················<h2·className="text-3xl·font-medium·text-white·mb-4">Prototype·User·Interface</h2>` with `··········<h2·className="text-3xl·font-medium·text-white·mb-4">⏎············Prototype·User·Interface`                                                                                                        prettier/prettier
+  37:11  error  Insert `</h2>⏎····`                                                                                                                                                                                                                                                                                                             prettier/prettier
+  38:1   error  Delete `········`                                                                                                                                                                                                                                                                                                               prettier/prettier
+  39:11  error  Delete `······`                                                                                                                                                                                                                                                                                                                 prettier/prettier
+  40:1   error  Replace `············` with `········`                                                                                                                                                                                                                                                                                          prettier/prettier
+  41:1   error  Delete `·`                                                                                                                                                                                                                                                                                                                      prettier/prettier
+  52:17  error  Replace `·path="/projects"·element={<div·className="text-white">Projects·Page</div>}` with `⏎············path="/projects"⏎············element={<div·className="text-white">Projects·Page</div>}⏎·········`                                                                                                                      prettier/prettier
+  53:17  error  Replace `·path="/tasks"·element={<div·className="text-white">Tasks·Page</div>}` with `⏎············path="/tasks"⏎············element={<div·className="text-white">Tasks·Page</div>}⏎·········`                                                                                                                                  prettier/prettier
+  54:17  error  Replace `·path="/messages"·element={<div·className="text-white">Messages·Page</div>}` with `⏎············path="/messages"⏎············element={<div·className="text-white">Messages·Page</div>}⏎·········`                                                                                                                      prettier/prettier
+
+/Users/thinh/Desktop/work/agent-app/agent-management-typescript/src/renderer/components/sidebar.tsx
+  23:3  warning  Unexpected console statement  no-console
+
+/Users/thinh/Desktop/work/agent-app/agent-management-typescript/src/renderer/components/ui/button.tsx
+  39:3  error  propType "asChild" is not required, but has no corresponding defaultProps declaration  react/require-default-props
+  49:9  error  Prop spreading is forbidden                                                            react/jsx-props-no-spreading
+
+/Users/thinh/Desktop/work/agent-app/agent-management-typescript/src/renderer/index.tsx
+  23:5   warning  Unexpected console statement             no-console
+  27:9   error    Must use destructuring state assignment  react/destructuring-assignment
+  31:17  error    Must use destructuring state assignment  react/destructuring-assignment
+  35:12  error    Must use destructuring props assignment  react/destructuring-assignment
+
+/Users/thinh/Desktop/work/agent-app/agent-management-typescript/src/renderer/lib/utils.ts
+  1:39  error  Replace `"clsx"` with `'clsx'`                      prettier/prettier
+  2:25  error  Replace `"tailwind-merge"` with `'tailwind-merge'`  prettier/prettier
+
+/Users/thinh/Desktop/work/agent-app/agent-management-typescript/tailwind.config.js
+   7:16  error  Replace `"2rem"` with `'2rem'`                                                                                      prettier/prettier
+   9:9   error  Replace `"2xl":·"1400px"` with `'2xl':·'1400px'`                                                                    prettier/prettier
+  14:17  error  Replace `"hsl(var(--border))"` with `'hsl(var(--border))'`                                                          prettier/prettier
+  15:16  error  Replace `"hsl(var(--input))"` with `'hsl(var(--input))'`                                                            prettier/prettier
+  16:15  error  Replace `"hsl(var(--ring))"` with `'hsl(var(--ring))'`                                                              prettier/prettier
+  17:21  error  Replace `"hsl(var(--background))"` with `'hsl(var(--background))'`                                                  prettier/prettier
+  18:21  error  Replace `"hsl(var(--foreground))"` with `'hsl(var(--foreground))'`                                                  prettier/prettier
+  20:20  error  Replace `"hsl(var(--primary))"` with `'hsl(var(--primary))'`                                                        prettier/prettier
+  21:23  error  Replace `"hsl(var(--primary-foreground))"` with `'hsl(var(--primary-foreground))'`                                  prettier/prettier
+  24:20  error  Replace `"hsl(var(--secondary))"` with `'hsl(var(--secondary))'`                                                    prettier/prettier
+  25:23  error  Replace `"hsl(var(--secondary-foreground))"` with `'hsl(var(--secondary-foreground))'`                              prettier/prettier
+  28:20  error  Replace `"hsl(var(--destructive))"` with `'hsl(var(--destructive))'`                                                prettier/prettier
+  29:23  error  Replace `"hsl(var(--destructive-foreground))"` with `'hsl(var(--destructive-foreground))'`                          prettier/prettier
+  32:20  error  Replace `"hsl(var(--muted))"` with `'hsl(var(--muted))'`                                                            prettier/prettier
+  33:23  error  Replace `"hsl(var(--muted-foreground))"` with `'hsl(var(--muted-foreground))'`                                      prettier/prettier
+  36:20  error  Replace `"hsl(var(--accent))"` with `'hsl(var(--accent))'`                                                          prettier/prettier
+  37:23  error  Replace `"hsl(var(--accent-foreground))"` with `'hsl(var(--accent-foreground))'`                                    prettier/prettier
+  40:20  error  Replace `"hsl(var(--popover))"` with `'hsl(var(--popover))'`                                                        prettier/prettier
+  41:23  error  Replace `"hsl(var(--popover-foreground))"` with `'hsl(var(--popover-foreground))'`                                  prettier/prettier
+  44:20  error  Replace `"hsl(var(--card))"` with `'hsl(var(--card))'`                                                              prettier/prettier
+  45:23  error  Replace `"hsl(var(--card-foreground))"` with `'hsl(var(--card-foreground))'`                                        prettier/prettier
+  49:13  error  Replace `"var(--radius)"` with `'var(--radius)'`                                                                    prettier/prettier
+  50:13  error  Replace `"calc(var(--radius)·-·2px)"` with `'calc(var(--radius)·-·2px)'`                                            prettier/prettier
+  51:13  error  Replace `"calc(var(--radius)·-·4px)"` with `'calc(var(--radius)·-·4px)'`                                            prettier/prettier
+  54:9   error  Replace `"accordion-down"` with `'accordion-down'`                                                                  prettier/prettier
+  55:27  error  Replace `"0"` with `'0'`                                                                                            prettier/prettier
+  56:25  error  Replace `"var(--radix-accordion-content-height)"` with `'var(--radix-accordion-content-height)'`                    prettier/prettier
+  58:9   error  Replace `"accordion-up"` with `'accordion-up'`                                                                      prettier/prettier
+  59:27  error  Replace `"var(--radix-accordion-content-height)"` with `'var(--radix-accordion-content-height)'`                    prettier/prettier
+  60:25  error  Replace `"0"` with `'0'`                                                                                            prettier/prettier
+  64:9   error  Replace `"accordion-down":·"accordion-down·0.2s·ease-out"` with `'accordion-down':·'accordion-down·0.2s·ease-out'`  prettier/prettier
+  65:9   error  Replace `"accordion-up":·"accordion-up·0.2s·ease-out"` with `'accordion-up':·'accordion-up·0.2s·ease-out'`          prettier/prettier
+
+✖ 77 problems (75 errors, 2 warnings)
+  70 errors and 0 warnings potentially fixable with the `--fix` option.
+

@@ -40,7 +40,7 @@ const isDebug =
   process.env.NODE_ENV === 'development' || process.env.DEBUG_PROD === 'true';
 
 if (isDebug) {
-  require('electron-debug').default();
+  require('electron-debug').default({ showDevTools: false });
 }
 
 const installExtensions = async () => {
@@ -74,6 +74,15 @@ const createWindow = async () => {
     width: 1024,
     height: 728,
     icon: getAssetPath('icon.png'),
+    // Frameless window for custom look
+    titleBarStyle: 'hidden',
+    // Align traffic lights (red/yellow/green) with our sidebar padding
+    trafficLightPosition: { x: 20, y: 20 },
+    // Native macOS Vibrancy (Blur behind app)
+    transparent: true,
+    backgroundColor: '#00000000', // Critical for preventing ghosting on some macOS versions
+    vibrancy: 'sidebar', // options: 'sidebar' | 'hud' | 'under-window' etc.
+    visualEffectState: 'active', // keep vibrant even when inactive
     webPreferences: {
       preload: app.isPackaged
         ? path.join(__dirname, 'preload.js')

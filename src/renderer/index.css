@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Liquid Slate Theme - Minimalist & Premium */
+    --background: 240 10% 3.9%; /* Zinc 950 (#09090b) */
+    --foreground: 0 0% 98%;     /* Zinc 50 (#fafafa) */
+
+    --card: 240 10% 6%;         /* Zinc 900+ (#18181b) but tailored */
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;        /* White Accent (#fafafa) */
+    --primary-foreground: 240 5.9% 10%; /* Zinc 900 Text on White */
+
+    --secondary: 240 3.7% 15.9%; /* Zinc 800 (#27272a) */
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%; /* Zinc 400 (#a1a1aa) */
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;   /* Zinc 800 for subtle borders */
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+
+    --radius: 0.5rem; /* Slightly more squared as requested */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-transparent text-foreground;
+  }
+}
+
+/* Liquid Glass Utilities */
+.glass {
+    @apply bg-zinc-900/60 backdrop-blur-2xl border border-white/5 shadow-2xl;
+}
+.glass-heavy {
+    @apply bg-zinc-900/40 backdrop-blur-3xl saturate-150 border-r border-white/5;
+}
