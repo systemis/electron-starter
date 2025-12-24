@@ -14,6 +14,11 @@ import { autoUpdater } from 'electron-updater';
 import log from 'electron-log';
 import MenuBuilder from './menu';
 import { resolveHtmlPath } from './util';
+import { AgentService } from './services/AgentService';
+import { SessionService } from './services/SessionService';
+
+const agentService = new AgentService();
+const sessionService = new SessionService();
 
 class AppUpdater {
   constructor() {
@@ -29,6 +34,25 @@ ipcMain.on('ipc-example', async (event, arg) => {
   const msgTemplate = (pingPong: string) => `IPC test: ${pingPong}`;
   console.log(msgTemplate(arg));
   event.reply('ipc-example', msgTemplate('pong'));
+});
+
+ipcMain.on('set-vibrancy', (event, theme: 'light' | 'dark') => {
+  if (mainWindow && process.platform === 'darwin') {
+    mainWindow.setVibrancy((theme === 'light' ? 'light' : 'sidebar') as any);
+  }
+});
+
+
+ipcMain.handle('agents:get-all', async () => {
+  return agentService.getAgents();
+});
+
+ipcMain.handle('sessions:get-recent', async (event, agentName: string) => {
+  return sessionService.getRecentProjects(agentName);
+});
+
+ipcMain.handle('sessions:get-active', async () => {
+  return sessionService.getActiveSessions();
 });
 
 if (process.env.NODE_ENV === 'production') {
@@ -73,6 +97,8 @@ const createWindow = async () => {
     show: false,
     width: 1024,
     height: 728,
+    minWidth: 900,
+    minHeight: 600,
     icon: getAssetPath('icon.png'),
     // Frameless window for custom look
     titleBarStyle: 'hidden',

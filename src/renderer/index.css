@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    /* Liquid Slate Theme - Minimalist & Premium */
+    /* Liquid Slate Theme - Minimalist & Premium - Dark Mode */
     --background: 240 10% 3.9%; /* Zinc 950 (#09090b) */
     --foreground: 0 0% 98%;     /* Zinc 50 (#fafafa) */
 
@@ -35,6 +35,37 @@
 
     --radius: 0.5rem; /* Slightly more squared as requested */
   }
+
+  /* Light Mode Theme */
+  :root[data-theme="light"] {
+    --background: 0 0% 100%;        /* Pure white */
+    --foreground: 240 10% 3.9%;     /* Zinc 950 */
+
+    --card: 0 0% 100%;              /* White cards */
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 240 5.9% 10%;        /* Zinc 900 */
+    --primary-foreground: 0 0% 98%; /* White text on dark accent */
+
+    --secondary: 240 4.8% 95.9%;    /* Zinc 100 */
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;        /* Zinc 100 */
+    --muted-foreground: 240 3.8% 46.1%; /* Zinc 600 */
+
+    --accent: 240 4.8% 95.9%;       /* Zinc 100 */
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;   /* Red 500 */
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;         /* Zinc 200 */
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+  }
 }
 
 @layer base {
@@ -52,4 +83,12 @@
 }
 .glass-heavy {
     @apply bg-zinc-900/40 backdrop-blur-3xl saturate-150 border-r border-white/5;
+}
+
+/* Light Mode Glass */
+[data-theme="light"] .glass {
+    @apply bg-white/60 border-zinc-200/50;
+}
+[data-theme="light"] .glass-heavy {
+    @apply bg-white/40 border-r border-zinc-200/50;
 }

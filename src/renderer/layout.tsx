@@ -1,10 +1,12 @@
 import { Outlet } from 'react-router-dom';
 import { CSSProperties } from 'react';
 import { Sidebar } from './components/sidebar';
+import { ThemeProvider } from './contexts/ThemeContext';
 
 export default function Layout() {
   return (
-    <div className="flex h-screen w-full bg-transparent overflow-hidden relative selection:bg-white/20">
+    <ThemeProvider>
+      <div className="flex h-screen w-full bg-transparent overflow-hidden relative selection:bg-primary/20">
       {/* Liquid Background Blobs - Optional, keeping distinct from native blur for now, or removing to see pure native */}
 
       <div className="z-10 relative flex w-full h-full">
@@ -19,11 +21,12 @@ export default function Layout() {
             style={{ WebkitAppRegion: 'drag' } as CSSProperties}
           />
 
-          <div className="flex-1 overflow-y-auto overflow-x-hidden p-10 max-w-6xl container mx-auto">
+          <div className="flex-1 overflow-y-auto overflow-x-hidden px-10 py-8">
             <Outlet />
           </div>
         </main>
       </div>
-    </div>
+      </div>
+    </ThemeProvider>
   );
 }
